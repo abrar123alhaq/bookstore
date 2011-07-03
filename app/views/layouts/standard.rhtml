@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AdminTheme - Ultimate Admin Panel Solution</title>
+	<meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+	<%= stylesheet_link_tag "app/style" %>
+	<%= stylesheet_link_tag "app/smoothness/jquery-ui-1.7.1.custom" %>
+	<%= stylesheet_link_tag "markitup/skins/markitup/style" %>
+	<%= stylesheet_link_tag "markitup/sets/default/style" %>
+	<%= stylesheet_link_tag "app/superfish" %>
+	<!--[if IE 7]> <%= stylesheet_link_tag "app/ie" %> <![endif]-->
+	<!--[if IE 7]> <%= stylesheet_link_tag "app/ie6" %> <![endif]-->
+	<!--[if IE]>
+		<style type="text/css">
+		  .clearfix {
+		    zoom: 1;     /* triggers hasLayout */
+		    display: block;     /* resets display for IE/Win */
+		    }  /* Only IE can see inside the conditional comment
+		    and read this CSS rule. Don't ever use a normal HTML
+		    comment inside the CC or it will close prematurely. */
+		</style>
+	<![endif]-->
+	<!-- JavaScript -->
+	<%= javascript_include_tag "app/jquery-1.3.2.min.js" %>
+	<%= javascript_include_tag "app/jquery-ui-1.7.1.custom.min.js" %>
+	<%= javascript_include_tag "app/hoverIntent.js" %>
+	<%= javascript_include_tag "app/superfish.js" %>
+	<script type="text/javascript">
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		});
+
+	</script>
+	
+	<%= javascript_include_tag "app/excanvas.pack.js" %>
+	<%= javascript_include_tag "app/jquery.flot.pack.js" %>
+	<%= javascript_include_tag "markitup/jquery.markitup.pack.js" %>
+	<%= javascript_include_tag "markitup/sets/default/set.js" %>
+	<%= javascript_include_tag "app/custom.js" %>
+	<script type="text/javascript" src="js/excanvas.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.flot.pack.js"></script>
+    <script type="text/javascript" src="markitup/jquery.markitup.pack.js"></script>
+	<script type="text/javascript" src="markitup/sets/set.js"></script>
+  	<script type="text/javascript" src="js/custom.js"></script>
+
+	 <!--[if IE]><script language="javascript" type="text/javascript" src="excanvas.pack.js"></script><![endif]-->
+</head>
+<body>
+<div class="container" id="container">
+    <div  id="header">
+    	<div id="profile_info">
+			<img src="/images/app/avatar.jpg" id="avatar" alt="avatar" />
+			<p>Welcome <strong>rzepak</strong>. <%= link_to "Log out", users_logout_path %></p>
+			<p>System messages: 3. <a href="#">Read?</a></p>
+			<p class="last_login">Last login: 21:03 12.05.2009</p>
+		</div>
+		<div id="logo"><h1><a href="/">AdmintTheme</a></h1></div>
+		
+    </div><!-- end header -->
+	    <div id="content" >
+	    <div id="top_menu" class="clearfix">
+	    	<ul class="sf-menu"> <!-- DROPDOWN MENU -->
+			<li class="current">
+				<a href="#a">Settings</a><!-- First level MENU -->
+				<ul>
+					<li>
+						<a href="#aa">Database options</a>
+					</li>
+					<li class="current">
+						<a href="#ab">Blog settings</a> <!-- Second level MENU -->
+						<ul>
+							<li class="current"><a href="#">Settings</a></li>
+							<li><a href="#aba">menu item</a></li>
+							<li><a href="#abb">menu item</a></li>
+							<li><a href="#abc">menu item</a></li>
+							<li><a href="#abd">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Menu Options</a> <!-- Third level MENU -->
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Editor</a>
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Some option</a>
+			</li>
+			<li>
+				<a href="#">Post edit</a>
+				<ul>
+					<li>
+						<a href="#">menu item</a>
+						<ul>
+							<li><a href="#">short</a></li>
+							<li><a href="#">short</a></li>
+							<li><a href="#">short</a></li>
+							<li><a href="#">short</a></li>
+							<li><a href="#">short</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">menu item</a>
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">menu item</a>
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">menu item</a>
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">menu item</a>
+						<ul>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+							<li><a href="#">menu item</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Some option</a>
+			</li>
+		</ul>
+			<a href="#" id="visit" class="right">Visit site</a>
+	    </div>
+		<div id="content_main" class="clearfix">
+			<div style="float:left; width:70%">
+				<h1><%= flash[:message] %></h1>
+				<%= yield -%>
+			</div>
+			<div id="sidebar" class="right">
+				<h2 class="ico_mug">Sidebar</h2>
+			<ul id="menu">
+				<li>
+					<a href="#" class="ico_posts">Posts</a>
+					<ul>
+						<li><a href="#">Edit posts</a></li>
+						<li><a href="#">Add post</a></li>
+						<li><a href="#">Manage posts</a></li>
+					</ul>
+					<a href="#" class="ico_page">Pages</a>
+					<ul>
+						<li><a href="#">Edit pages</a></li>
+						<li><a href="#">Add page</a></li>
+						<li><a href="#">Manage pages</a></li>
+					</ul>
+					<a href="#" class="ico_user">Users</a>
+					<ul>
+						<li><a href="#">Edit users</a></li>
+						<li><a href="#">Add user</a></li>
+						<li><a href="#">Manage users</a></li>
+					</ul>
+					<a href="#" class="ico_settings">Settings</a>
+					<ul>
+						<li><a href="#">Database</a></li>
+						<li><a href="#">Themes</a></li>
+						<li><a href="#">Options</a></li>
+					</ul>
+					<a href="#" class="ico_settings">Settings</a>
+					<ul>
+						<li><a href="#">Database</a></li>
+						<li><a href="#">Themes</a></li>
+						<li><a href="#">Options</a></li>
+					</ul>
+				</li>
+		
+				
+			</ul>
+
+			</div><!-- end #sidebar -->
+		</div><!-- end #content_main -->
+	</div><!-- end container -->
+
+</body>
+</html>
